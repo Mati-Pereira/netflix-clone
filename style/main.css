@@ -81,7 +81,8 @@ header .logo {
 
 .btns {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
