@@ -53,23 +53,25 @@ header .logo {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url("../img/stranger-things.jpg");
-  height: 450px;
+  height: fit-content;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .main-movie .container {
-  width: 70%;
+  width: 90%;
+  padding: 0 40px;
 }
 
 .main-movie .description {
   margin-bottom: 50px;
   margin-top: 20px;
   line-height: 1.5;
+  width: 70%;
 }
 
 .main-movie .title {
@@ -106,18 +108,25 @@ header .logo {
 @media screen and (max-width: 600px) {
   header .container {
     flex-direction: column;
-    padding-bottom: 15px;
+    gap: 10px;
+    padding-bottom: 20px;
   }
 
   .main-movie .container {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
   }
 
-  .btns{
+  .main-movie .description {
+    width: 80%;
+    line-height: 1.5;
+    margin: 50px auto;
+  }
+
+  .btns {
     flex-direction: column;
   }
-
 
   .btn {
     width: 100%;
