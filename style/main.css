@@ -1,0 +1,119 @@
+/* Initial config */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #e50914;
+  --secondary-color: #141414;
+  --text-color: #aaa;
+}
+
+body {
+  color: white;
+  background-color: #141414;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Header */
+
+header a {
+  color: var(--text-color);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #fff;
+}
+
+header .container {
+  align-items: center;
+  background-color: --secondary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+header .logo {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 5px;
+}
+
+/* Main */
+
+.main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/stranger-things.jpg");
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+
+.main-movie .container {
+  width: 70%;
+  min-width: 90vmin;
+}
+
+.main-movie .description {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.main-movie .title {
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.25s;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  
+  .main-movie .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
