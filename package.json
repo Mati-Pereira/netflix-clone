@@ -1,0 +1,11 @@
+{
+  "name": "netflix-clone",
+  "version": "1.0.0",
+  "main": "js/index.js",
+  "scripts": {
+    "build": "yarn"
+  },
+  "repository": "git@github.com:Mati-Pereira/netflix-clone.git",
+  "author": "Matheus <matheus-rodrigues37@live.com>",
+  "license": "MIT"
+}
