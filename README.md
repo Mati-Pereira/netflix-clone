@@ -9,15 +9,13 @@ Simple Clone do site da Netflix
 
 ## Demonstração
 
-colocar site aqui
+https://rococo-dodol-197eb5.netlify.app/
 
 ## Stack utilizada
 
 - HTML
 - CSS
 - jQuery
-
-
 
 ## Licença
 
